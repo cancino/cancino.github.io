@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="bonito.css" />
 </head>
 <body>
-    
+    <form id="formulario">
+        <label for="user">Usuario: </label> <input name="user" id="username">
+        <label for="pwd">Contraseña: </label> <input name="pwd" type="password" id="password">
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="tablero">
+        <h1>Hola: <span id="usuario"></span></h1>
+        <p>Tu saldo disponible es: $ <span id="saldo"></span></p>
+        <!-- The system must display a menu for users to perform transactions. -->
+        <p>¿Que operación desea realizar?</p>
+        <form id="operaciones">
+            <select name="menu" id="menu">
+                <option value="consultar">Consultar saldo</option>
+                <option value="depositar">Depositar</option>
+                <option value="retirar">Retirar</option>
+                <option value="transferir">Transferir</option>
+            </select>
+            <span id="grupo"><input type="text" id="importe"><span id="descripcion"></span></span>
+            <button type="submit">Consultar</button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="eljotaese.js"></script>
 </body>
 </html>
