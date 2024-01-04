@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>E01</title>
     <link rel="stylesheet" href="bonito.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
         <label for="pwd">Contraseña: </label> <input name="pwd" type="password" id="password">
         <button type="submit">Enviar</button>
     </form>
-    <div id="tablero">
+    <div id="tablero" hidden>
         <h1>Hola: <span id="usuario"></span></h1>
         <p>Tu saldo disponible es: $ <span id="saldo"></span></p>
         <!-- The system must display a menu for users to perform transactions. -->
@@ -24,8 +24,8 @@
                 <option value="retirar">Retirar</option>
                 <option value="transferir">Transferir</option>
             </select>
-            <span id="grupo"><input type="text" id="importe"><span id="descripcion"></span></span>
-            <button type="submit">Consultar</button>
+            <span id="grupo" hidden><span id="descripcion"></span><input type="number" id="importe"></span>
+            <button type="submit" id="mboton">Consultar</button>
         </form>
     </div>
 
